@@ -1,0 +1,147 @@
+# OSINT Investigation & Intelligence Report
+
+A beginner-friendly passive OSINT investigation of the OWASP Foundation using publicly available information.
+
+## 🎯 Project Objective
+
+The goal of this project was to practice Open-Source Intelligence (OSINT) techniques and learn how to collect, verify, interpret, and document publicly available information ethically.
+
+## 🔎 Target
+
+**Organization:** OWASP Foundation  
+**Domain:** `owasp.org`
+
+**Investigation Type:** Passive OSINT
+
+## 🛠️ Techniques Used
+
+- Search-engine intelligence
+- Google search operators
+- Username/account investigation
+- Public email investigation
+- DNS enumeration
+- A record analysis
+- MX record analysis
+- NS record analysis
+- TXT/SPF analysis
+- Reverse DNS investigation
+- IP and ASN intelligence
+- Public reputation research
+
+## 📌 Key Findings
+
+### Search Intelligence
+
+Used search operators including:
+
+```text
+site:owasp.org
+site:owasp.org "OWASP Foundation"
+site:owasp.org filetype:pdf
+```
+
+These searches identified publicly indexed OWASP content and documents.
+
+### DNS Intelligence
+
+The domain resolved to:
+
+```text
+216.150.1.1
+216.150.16.1
+```
+
+### Mail Infrastructure
+
+MX records identified Google mail infrastructure for `owasp.org`.
+
+### DNS Infrastructure
+
+NS records identified Cloudflare nameservers:
+
+```text
+west.ns.cloudflare.com
+fay.ns.cloudflare.com
+```
+
+### SPF
+
+The domain published an SPF policy authorizing sending infrastructure associated with Google, Mailchimp, and Amazon SES.
+
+### IP Intelligence
+
+The investigated IP addresses were associated with cloud/hosting network infrastructure and AS16509.
+
+Reverse DNS lookups did not return hostnames for the investigated IPs.
+
+## 📂 Project Structure
+
+```text
+05-OSINT Investigation
+│
+├── evidence
+│   ├── search
+│   └── domain
+│
+├── notes
+│   ├── investigation_notes.md
+│
+├── report
+│   └── OSINT_Intelligence_Report.md
+│
+└── README.md
+```
+
+## 🧪 Evidence
+
+The `evidence` directory contains screenshots documenting the search-engine and DNS investigation steps.
+
+## 📝 Documentation
+
+Detailed investigation notes are available in:
+
+`notes/investigation_notes.md`
+
+The complete intelligence report is available in:
+
+`report/OSINT_Intelligence_Report.md`
+
+## ⚖️ Ethical Considerations
+
+This project used passive OSINT techniques and publicly available information only.
+
+No:
+
+- Unauthorized access
+- Credential testing
+- Exploitation
+- Intrusive scanning
+- Private-data collection
+- Password collection
+- Account compromise
+
+was performed.
+
+The investigation was conducted for educational and cybersecurity-learning purposes.
+
+## 🧠 Skills Demonstrated
+
+- Passive reconnaissance
+- OSINT methodology
+- Search-engine intelligence
+- DNS analysis
+- Email infrastructure analysis
+- IP/ASN investigation
+- Evidence collection
+- Technical documentation
+- Ethical cybersecurity research
+
+## 🚀 Learning Outcome
+
+This project helped develop a practical understanding of how publicly available information can be collected and correlated during an OSINT investigation.
+
+It also reinforced the importance of verifying findings and avoiding unsupported conclusions when analyzing public infrastructure.
+
+---
+
+**Project Status:** Completed ✅
